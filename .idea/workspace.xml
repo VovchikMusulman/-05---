@@ -115,7 +115,7 @@
       <updated>1730343696945</updated>
       <workItem from="1730343698291" duration="13712000" />
       <workItem from="1730430928939" duration="210000" />
-      <workItem from="1730431500999" duration="1400000" />
+      <workItem from="1730431500999" duration="1453000" />
     </task>
     <task id="LOCAL-00001" summary="yp05_oop_atvni(1)">
       <option name="closed" value="true" />
@@ -133,7 +133,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730432894855</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="yp05_oop_atvni(1)">
+      <option name="closed" value="true" />
+      <created>1730432915271</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1730432915271</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

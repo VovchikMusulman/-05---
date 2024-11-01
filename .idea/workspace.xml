@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c84d02ae-3454-4aad-aa07-c05c0be3ff41" name="Changes" comment="yp05_oop_atvni(1)">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locallibrary/catalog/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/locallibrary/catalog/static/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locallibrary/catalog/templates/base_generic.html" beforeDir="false" afterPath="$PROJECT_DIR$/locallibrary/catalog/templates/base_generic.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locallibrary/catalog/templates/catalog/book_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/locallibrary/catalog/templates/catalog/book_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locallibrary/catalog/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/locallibrary/catalog/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locallibrary/catalog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/locallibrary/catalog/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locallibrary/catalog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/locallibrary/catalog/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +24,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="Vovchik &lt;you@example.com&gt;" />
         <option value="xcv" />
       </list>
     </option>
@@ -120,8 +115,25 @@
       <updated>1730343696945</updated>
       <workItem from="1730343698291" duration="13712000" />
       <workItem from="1730430928939" duration="210000" />
-      <workItem from="1730431500999" duration="1266000" />
+      <workItem from="1730431500999" duration="1400000" />
     </task>
+    <task id="LOCAL-00001" summary="yp05_oop_atvni(1)">
+      <option name="closed" value="true" />
+      <created>1730432863966</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1730432863966</updated>
+    </task>
+    <task id="LOCAL-00002" summary="yp05_oop_atvni(1)">
+      <option name="closed" value="true" />
+      <created>1730432894855</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1730432894855</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

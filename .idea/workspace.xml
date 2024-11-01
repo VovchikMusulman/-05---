@@ -5,7 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c84d02ae-3454-4aad-aa07-c05c0be3ff41" name="Changes" comment="yp05_oop_atvni(1)">
-      <change beforePath="$PROJECT_DIR$/locallibrary/catalog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/locallibrary/catalog/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/locallibrary/locallibrary/registration/logged_out.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/locallibrary/locallibrary/registration/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/locallibrary/locallibrary/registration/password_reset_complete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/locallibrary/locallibrary/registration/password_reset_confirm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/locallibrary/locallibrary/registration/password_reset_done.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/locallibrary/locallibrary/registration/password_reset_email.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/locallibrary/locallibrary/registration/password_reset_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locallibrary/catalog/templates/base_generic.html" beforeDir="false" afterPath="$PROJECT_DIR$/locallibrary/catalog/templates/base_generic.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locallibrary/catalog/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/locallibrary/catalog/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locallibrary/catalog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/locallibrary/catalog/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locallibrary/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/locallibrary/catalog/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locallibrary/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/locallibrary/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locallibrary/locallibrary/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/locallibrary/locallibrary/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locallibrary/locallibrary/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/locallibrary/locallibrary/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +74,7 @@
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/gr426_atvni/PycharmProjects/yp05_oop_atvni",
+    "last_opened_file_path": "C:/Users/gr426_atvni/PycharmProjects/yp05_oop_atvni/locallibrary/catalog/locallibrary/templates ",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -70,6 +84,15 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\gr426_atvni\PycharmProjects\yp05_oop_atvni\locallibrary\catalog\locallibrary\templates " />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\gr426_atvni\PycharmProjects\yp05_oop_atvni\locallibrary\locallibrary" />
+      <recent name="C:\Users\gr426_atvni\PycharmProjects\yp05_oop_atvni\locallibrary\catalog\templates" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="djangoProject1" type="Python.DjangoServer" factoryName="Django server">
       <module name="yp05_oop_atvni" />
@@ -115,7 +138,7 @@
       <updated>1730343696945</updated>
       <workItem from="1730343698291" duration="13712000" />
       <workItem from="1730430928939" duration="210000" />
-      <workItem from="1730431500999" duration="1400000" />
+      <workItem from="1730431500999" duration="9098000" />
     </task>
     <task id="LOCAL-00001" summary="yp05_oop_atvni(1)">
       <option name="closed" value="true" />
@@ -133,7 +156,23 @@
       <option name="project" value="LOCAL" />
       <updated>1730432894855</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="yp05_oop_atvni(1)">
+      <option name="closed" value="true" />
+      <created>1730432915271</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1730432915271</updated>
+    </task>
+    <task id="LOCAL-00004" summary="yp05_oop_atvni(1)">
+      <option name="closed" value="true" />
+      <created>1730432988409</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1730432988409</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

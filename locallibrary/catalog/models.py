@@ -1,29 +1,11 @@
 from django.db import models
+from django.db.models import UniqueConstraint
+from django.db.models.functions import Lower
 from django.urls import reverse
-import uuid
 from django.contrib.auth.models import User
 from datetime import date
+import uuid
 
-
-class MyModelName(models.Model):
-    """Типичный класс модели, производный от класса Model."""
-
-    # Поля
-    my_field_name = models.CharField(max_length=20, help_text='Введите описание поля')
-    # …
-
-    # Метаданные
-    class Meta:
-        ordering = ['-my_field_name']
-
-    # Methods
-    def get_absolute_url(self):
-        """Возвращает URL-адрес для доступа к определенному экземпляру MyModelName."""
-        return reverse('model-detail-view', args=[str(self.id)])
-
-    def __str__(self):
-        """Строка для представления объекта MyModelName (например, в административной панели и т.д.)."""
-        return self.my_field_name
 
 class Genre(models.Model):
     """
@@ -37,6 +19,21 @@ class Genre(models.Model):
         """
         return self.name
 
+#Метод get_context_data добавляет количество жанров в контекст
+class Language(models.Model):
+    """Model representing a Language (e.g. English, French, Japanese, etc.)"""
+    name = models.CharField(max_length=200,
+                            unique=True,
+                            help_text="Enter the book's natural language (e.g. English, French, Japanese etc.)")
+
+    def get_absolute_url(self):
+        """Returns the url to access a particular language instance."""
+        return reverse('language-detail', args=[str(self.id)])
+
+    def __str__(self):
+        """String for representing the Model object (in Admin site etc.)"""
+        return self.name
+
 class Book(models.Model):
     """
     Model representing a book (but not a specific copy of a book).
@@ -48,6 +45,7 @@ class Book(models.Model):
     summary = models.TextField(max_length=1000, help_text="Enter a brief description of the book")
     isbn = models.CharField('ISBN',max_length=13, help_text='13 Character <a href="https://www.isbn-international.org/content/what-isbn">ISBN number</a>')
     genre = models.ManyToManyField(Genre, help_text="Select a genre for this book")
+    language = models.ForeignKey('Language', on_delete=models.SET_NULL, null=True)
     # ManyToManyField used because genre can contain many books. Books can cover many genres.
     # Genre class has already been defined so we can specify the object above.
 
@@ -56,7 +54,6 @@ class Book(models.Model):
         String for representing the Model object.
         """
         return self.title
-
 
     def get_absolute_url(self):
         """
@@ -68,9 +65,9 @@ class Book(models.Model):
         """
         Creates a string for the Genre. This is required to display genre in Admin.
         """
-        return ', '.join([ genre.name for genre in self.genre.all()[:3] ])
-    display_genre.short_description = 'Genre'
+        return ', '.join([genre.name for genre in self.genre.all()[:3]])
 
+    display_genre.short_description = 'Genre'
 
 class BookInstance(models.Model):
     """
@@ -94,7 +91,6 @@ class BookInstance(models.Model):
     class Meta:
         ordering = ["due_back"]
         permissions = (("can_mark_returned", "Set book as returned"),)
-
 
     def __str__(self):
         """
@@ -122,7 +118,6 @@ class Author(models.Model):
         Returns the url to access a particular author instance.
         """
         return reverse('author-detail', args=[str(self.id)])
-
 
     def __str__(self):
         """

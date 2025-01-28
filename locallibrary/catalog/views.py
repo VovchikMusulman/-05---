@@ -10,8 +10,7 @@ import datetime
 from django.contrib.auth.decorators import permission_required
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.urls import reverse_lazy
-from .models import Author
-
+from .forms import BookForm
 from .forms import RenewBookForm
 
 
@@ -35,11 +34,18 @@ def index(request):
 class BookListView(generic.ListView):
     model = Book
     paginate_by = 10
+    template_name = 'catalog/book_list.html'
+
+    def get_queryset(self):
+        return Book.objects.all().order_by('-is_favorite', 'title')
 
 class BookCreate(PermissionRequiredMixin, CreateView):
     model = Book
     fields = ['title', 'author', 'summary', 'isbn', 'genre', 'language']
     permission_required = 'catalog.add_book'
+    form_class = BookForm
+    template_name = 'catalog/book_form.html'
+    success_url = '/catalog/books/'
 
 #Обрабатывает запрос и получает объект книги по переданному идентификатору (pk)
 class BookDetailView(generic.DetailView):
@@ -69,6 +75,9 @@ class BookUpdate(PermissionRequiredMixin, UpdateView):
     model = Book
     fields = ['title', 'author', 'summary', 'isbn', 'genre', 'language']
     permission_required = 'catalog.change_book'
+    form_class = BookForm
+    template_name = 'catalog/book_form.html'
+    success_url = '/catalog/books/'
 
 class BookDelete(PermissionRequiredMixin, DeleteView):
     model = Book
